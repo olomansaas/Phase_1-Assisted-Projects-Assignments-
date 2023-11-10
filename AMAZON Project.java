@@ -34,7 +34,7 @@ public class Rough {
 		WebElement signInButton = driver.findElement(By.id("nav-link-accountList"));
 		signInButton.click();
 		WebElement emailInput = driver.findElement(By.id("ap_email"));
-		emailInput.sendKeys("9306747811");
+		emailInput.sendKeys("9******");
 		
 		File srcFile2 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);	
 		File destFile2 = new File("./Screenshots/2.png");
@@ -44,7 +44,7 @@ public class Rough {
 		WebElement continueButton = driver.findElement(By.id("continue"));
 		continueButton.click();
 		WebElement passwordInput = driver.findElement(By.id("ap_password"));
-		passwordInput.sendKeys("Lala@121");
+		passwordInput.sendKeys("L******");
 		
 		File srcFile3 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);	
 		File destFile3 = new File("./Screenshots/3.png");
