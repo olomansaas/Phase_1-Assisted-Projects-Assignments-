@@ -31,3 +31,22 @@ public class Parallel {
 	}
 
 }
+
+
+XML
+
+	<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parallel Concept" parallel="methods" verbose="1" thread-count="3">
+	<test name="Test Cycle 1">
+		<classes>
+			<class name="TestNGpkg.Parallel">
+				<methods>
+					<include name="wiki"></include>
+					<include name="mmt"></include>
+					<include name="google"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
