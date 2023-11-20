@@ -1,3 +1,4 @@
+
 package TestNGpkg;
 
 import org.testng.annotations.Test;
@@ -33,3 +34,37 @@ public class Grouping {
 		
 	}
 }
+
+
+xml files
+
+
+	<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="This is a grouping file">
+	<test name="Grouping" verbose="1">
+		<groups>
+			<run>
+				<include name="smoke"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="TestNGpkg.Grouping"></class>
+			<class name="TestNGpkg.Grouping2"></class>
+			
+		</classes>
+	</test>
+	
+	<test name="Regression" verbose="1">
+		<groups>
+			<run>
+				<include name="Regression"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="TestNGpkg.Grouping"></class>
+			<class name="TestNGpkg.Grouping2"></class>
+			
+		</classes>
+	</test>
+</suite>
